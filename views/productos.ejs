@@ -1,0 +1,64 @@
+<%- include layouts/header.ejs %>
+
+  <div class="container">
+    <h1>
+      <%= title %>
+    </h1>
+
+    <div class="row">
+      <% for(var arpon=0;arpon<arpones.length; arpon++ ) { %>
+
+
+
+        <div class="col-sm-3 mb-3 mb-sm-0"> <!--primer card-->
+          <div class="card">
+            <img height="317" src="<%=arpones[arpon].imagen %>" class="card-img-top" alt="imagenes">
+            <div class="card-body">
+              <h5 class="card-title">
+                <%=arpones[arpon].titulo %>
+              </h5>
+              <p class="card-text"> <%=arpones[arpon].descripcion %></p> <br/>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+
+<% } %></div>
+<br>
+
+
+<!--empieza un bootstrap-->
+
+<h2 class="center">Listado de implantes mas utilizados</h2> <br>
+
+ARPONES DE TITANIO
+<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-success" style="width: 25%">25%</div>
+</div> <br>
+
+ARPONES DE PEEK 4.75 MM 
+<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+</div> <br>
+
+SUTURA FIBERWIRE
+<div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+</div> <br>
+
+COMBO DE LOS TRES IMPLANTES
+<div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+</div> <br>
+
+
+
+
+
+  <%- include layouts/footer.ejs %>
+
+  
+
+
+  
